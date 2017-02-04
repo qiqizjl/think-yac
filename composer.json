@@ -11,7 +11,7 @@
     "require": {},
     "autoload": {
       "psr-4": {
-          "naixiaoxin\\yac": "src"
+        "naixiaoxin\\yac\\": "src"
       },
       "files": [
       ]
