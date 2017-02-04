@@ -1,0 +1,19 @@
+{
+    "name": "naixiaoxin/think-yac",
+    "description": "yac for thinkphp5",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "NaiXiaoXin",
+            "email": "i@naixiaoxin.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+      "psr-4": {
+          "naixiaoxin\\yac": "src"
+      },
+      "files": [
+      ]
+  }
+}
