@@ -41,6 +41,17 @@ class Yac extends Driver
         return $this->handler->get($this->getCacheKey($name)) ? true : false;
     }
 
+    /**
+     * MD5当前的KEY
+     * @access public
+     * @param string $name 缓存变量名
+     * @return string
+     */
+    public function getCacheKey($name)
+    {
+          return $this->options['prefix'] . md5($name);
+    }
+    
 
     /**
      * 读取缓存
