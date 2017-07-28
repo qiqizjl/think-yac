@@ -67,8 +67,7 @@ class Yac extends Driver
         {
             return $default;
         }
-
-        return $data;
+        return unserialize($value);
     }
 
     /**
@@ -89,8 +88,9 @@ class Yac extends Driver
         {
             $first = true;
         }
+        $value=serialize($value);
         $key    = $this->getCacheKey($name);
-        $result = $this->handler->set($key, $value);
+        $result = $this->handler->set($key, $value,$expire);
         isset($first) && $this->setTagItem($key);
 
         return $result;
